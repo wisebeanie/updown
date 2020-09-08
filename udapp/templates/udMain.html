@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main role="main" class="container">
+    <br>
+    <br>
+    <div class="jumbotron">
+      <h1><b>Up-Down</b></h1>
+
+      <br>
+      <br>
+      <p class="lead">여러 질문들을 통해 운영자가 생각하는 숫자를 맞춰보세요!</p>
+      <a class="btn btn-lg btn-primary" href="{% url 'game' %}" role="button">게임 시작 &raquo;</a>
+    </div>
+</main>
+
+{% endblock %}

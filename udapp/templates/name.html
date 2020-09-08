@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <br>
+    <div class="container">
+        <h1><b>이름 입력</b></h1>
+        <hr>
+        <br><br>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="다음으로"/>
+        </form>
+    </div>
+
+{% endblock %}
